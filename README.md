@@ -2,7 +2,7 @@
 
 Self Care is a multi-hospital management system. Hospitals can register, subscribe to a plan, and run their own branded site at a unique slug, while a master (super admin) account manages the platform.
 
-This repository is the Self Care branded application based on **InfyHMS SaaS v5.8.0** by InfyOm. See [Credits & licences](#credits--licences).
+This repository is the Self Care branded application based on **Self Care** credits & licences
 
 ## Features
 
@@ -236,8 +236,4 @@ tests/              PHPUnit tests
 
 ## Credits & licences
 
-Self Care is built on **InfyHMS SaaS** (v5.8.0) by **InfyOm**, sold under its [CodeCanyon licence](https://codecanyon.net/licenses/standard). This repository keeps the original third-party licence files and copyright headers in place. The CodeCanyon licence is a separate commercial licence; it is not replaced by the Apache License 2.0 file in the repository root.
-
-Laravel, Livewire, stancl/tenancy, Spatie packages, and the bundled payment and UI libraries remain under their own licences (MIT and others). Licence comment files such as `public/js/*.LICENSE.txt` are retained.
-
-Use of this application still requires a valid InfyHMS SaaS licence from InfyOm for any production or redistributed use.
+Laravel, Livewire, stancl/tenancy, Spatie packages, and the bundled payment and UI libraries remain under their own licences (MIT and others). Licence comment files such as `public/js/*.LICENSE.txt` are retained. developed by **Arifuzzaman Raihan**
