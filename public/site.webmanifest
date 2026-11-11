@@ -1,0 +1,13 @@
+{
+  "name": "Self Care",
+  "short_name": "Self Care",
+  "description": "Self Care — hospital management",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f6fcff",
+  "theme_color": "#0B5F56",
+  "icons": [
+    { "src": "/favicon.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/web/img/selfcare-mark.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

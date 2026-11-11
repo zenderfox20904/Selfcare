@@ -1,0 +1,253 @@
+/* Self Care brand + responsive overrides. Loaded after theme CSS. Do not edit compiled vendor bundles. */
+
+/* -------------------------------------------------------------------------- */
+/* Public landing / hospital website logos                                      */
+/* -------------------------------------------------------------------------- */
+.header-logo,
+a.header-logo {
+  display: inline-flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.header-logo img,
+a.header-logo img,
+#logo-img,
+.footer-logo img,
+#footer-logo-white-img {
+  width: auto !important;
+  max-width: 100% !important;
+  height: 52px !important;
+  max-height: 52px !important;
+  object-fit: contain !important;
+}
+
+@media (min-width: 992px) {
+  .header-logo img,
+  a.header-logo img,
+  #logo-img,
+  .footer-logo img,
+  #footer-logo-white-img {
+    height: 64px !important;
+    max-height: 64px !important;
+    max-width: 280px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header-logo img,
+  a.header-logo img,
+  #logo-img,
+  .footer-logo img,
+  #footer-logo-white-img {
+    height: 36px !important;
+    max-height: 36px !important;
+  }
+
+  /* Keep header logo + toggler on one row without overflow */
+  header .row {
+    --bs-gutter-x: 0.75rem;
+  }
+
+  header .navbar {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  header .navbar .btn,
+  header .navbar-toggler {
+    flex-shrink: 0;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Auth pages (login, register, forgot/reset password)                          */
+/* -------------------------------------------------------------------------- */
+body.auth-page {
+  min-height: 100%;
+  background-color: #eff3f7;
+}
+
+body.auth-page,
+body.auth-page.header-fixed,
+body.auth-page.aside-fixed,
+body.auth-page.toolbar-fixed {
+  padding: 0 !important;
+  margin: 0;
+}
+
+body.auth-page .flex-root {
+  padding: 0 !important;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.auth-shell {
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.25rem;
+  width: 100%;
+}
+
+@media (max-width: 575.98px) {
+  .auth-shell {
+    justify-content: flex-start;
+    padding: 1.25rem 0.875rem 1.75rem;
+  }
+}
+
+/* Neutralize theme .image { max-width: 120px } that shoved the wordmark right */
+.auth-shell a.image,
+.auth-shell a.auth-logo,
+body.auth-page a.image {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 auto 1rem !important;
+  flex-shrink: 0 !important;
+  object-fit: contain !important;
+}
+
+.auth-shell a.image > img,
+.auth-shell .logo-fix-size,
+body.auth-page a.image > img,
+body.auth-page .logo-fix-size {
+  display: block !important;
+  margin: 0 auto !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: min(280px, 100%) !important;
+  max-height: 80px !important;
+  object-fit: contain !important;
+  flex-shrink: 1 !important;
+}
+
+@media (max-width: 575.98px) {
+  .auth-shell a.image,
+  body.auth-page a.image {
+    margin: 0 auto 0.85rem !important;
+  }
+
+  .auth-shell a.image > img,
+  .auth-shell .logo-fix-size,
+  body.auth-page a.image > img,
+  body.auth-page .logo-fix-size {
+    max-height: 56px !important;
+    max-width: min(240px, 80vw) !important;
+  }
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 575.98px) {
+  .auth-card.width-540,
+  .auth-card {
+    padding: 1.1rem 1rem 1.35rem !important;
+  }
+
+  .auth-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem !important;
+  }
+}
+
+.auth-card-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 0 0.85rem;
+}
+
+.auth-page .language-option,
+.auth-card-toolbar .language-option {
+  justify-content: flex-end;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: auto;
+  list-style: none;
+}
+
+.auth-page .language-option .nav-item,
+.auth-page .language-option .dropdown,
+.auth-page .language-option li {
+  margin: 0 !important;
+}
+
+.auth-page .language-option .btn,
+.auth-page .language-option .dropdown-toggle {
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0.35rem 0.85rem !important;
+  font-size: 0.8125rem !important;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.auth-page .language-option .dropdown-menu {
+  min-width: 9rem;
+  width: auto !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Admin sidebar logos                                                          */
+/* -------------------------------------------------------------------------- */
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.sidebar-logo img,
+img.sidebar-brand-logo {
+  width: auto !important;
+  height: 44px !important;
+  max-width: 180px !important;
+  object-fit: contain !important;
+}
+
+.collapsed-menu.aside-menu-container .sidebar-logo img,
+.collapsed-menu .sidebar-logo img {
+  height: 40px !important;
+  width: 40px !important;
+  max-width: 40px !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 991.98px) {
+  .aside-menu-container__aside-logo {
+    overflow: hidden;
+  }
+
+  .sidebar-logo img,
+  img.sidebar-brand-logo {
+    height: 36px !important;
+    max-width: 140px !important;
+  }
+
+  /* Prevent dashboard content overflowing the phone viewport */
+  .wrapper,
+  #kt_wrapper,
+  .content,
+  .container-fluid,
+  table {
+    max-width: 100%;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
